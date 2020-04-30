@@ -1,0 +1,92 @@
+archetype (adl_version=1.4; uid=94a8eace-42aa-454c-b0d3-1fd2b2fe8efe)
+	openEHR-EHR-EVALUATION.special_patient_note.v0
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::en]>
+
+description
+	original_author = <
+		["date"] = <"2019-05-10">
+	>
+	lifecycle_state = <"unmanaged">
+	details = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+		>
+	>
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/.">
+		["custodian_organisation"] = <"openEHR Foundation">
+		["original_namespace"] = <"org.openehr">
+		["original_publisher"] = <"openEHR Foundation">
+		["custodian_namespace"] = <"org.openehr">
+		["MD5-CAM-1.0.1"] = <"7858970b7f14d3e8f112846f95f7106f">
+		["build_uid"] = <"f7232577-9ec9-3b29-ae88-c4d125ea89b4">
+		["ip_acknowledgements"] = <"This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyrighted material of the International Health Terminology Standards Development Organisation (IHTSDO). Where an implementation of this artefact makes use of SNOMED CT content, the implementer must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/get-snomedct or info@snomed.org.">
+	>
+
+definition
+	EVALUATION[at0000] matches {    -- Special Patient Note
+		data matches {
+			ITEM_TREE[at0001] matches {    -- ItemTree
+				items cardinality matches {0..*; unordered} matches {
+					ELEMENT[at0003] occurrences matches {0..1} matches {    -- Date Valid From
+						value matches {
+							DV_DATE_TIME matches {*}
+						}
+						name matches {
+							DV_CODED_TEXT matches {*}
+						}
+					}
+					ELEMENT[at0004] occurrences matches {0..1} matches {    -- Date Valid Until
+						value matches {
+							DV_DATE_TIME matches {*}
+						}
+					}
+					ELEMENT[at0005] occurrences matches {0..1} matches {    -- Special Note Text
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
+				}
+			}
+		}
+		protocol matches {
+			ITEM_TREE[at0006] matches {*}    -- ItemTree
+		}
+	}
+
+ontology
+	term_definitions = <
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"Special Patient Note">
+					description = <"Special Patient Note">
+				>
+				["at0001"] = <
+					text = <"ItemTree">
+					description = <"@ internal @">
+				>
+				["at0003"] = <
+					text = <"Date Valid From">
+					description = <"Will normally be the date of authoring but users may wish to forward date in some cirumstances">
+				>
+				["at0004"] = <
+					text = <"Date Valid Until">
+					description = <"Most commonly will not be entered by users, but may be needed on occasions">
+				>
+				["at0005"] = <
+					text = <"Special Note Text">
+					description = <"The narrative text of the special note">
+				>
+				["at0006"] = <
+					text = <"ItemTree">
+					description = <"@ internal @">
+				>
+			>
+		>
+	>
