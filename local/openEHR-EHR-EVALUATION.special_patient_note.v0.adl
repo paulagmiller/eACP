@@ -10,11 +10,17 @@ language
 description
 	original_author = <
 		["date"] = <"2019-05-10">
+		["name"] = <"Dr Paul Miller">
+		["organisation"] = <"NHS Education Scotland Digital Service (NDS)">
+		["email"] = <"paul.miller@nes.scot.nhs.uk">
 	>
 	lifecycle_state = <"unmanaged">
 	details = <
 		["en"] = <
 			language = <[ISO_639-1::en]>
+			purpose = <"this archetype is intended to support the Special Patient Note data in clinical record systems">
+			keywords = <"Special Note, GPs, general practice, key information summary, KIS, ACP, eKIS, ECs, Emergency Care Summary", ...>
+			use = <"This archetype should be used for storing data relevant to the Special Patient Note as per the description">
 		>
 	>
 	other_details = <
@@ -23,7 +29,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"7858970b7f14d3e8f112846f95f7106f">
+		["MD5-CAM-1.0.1"] = <"db44405edfb6086c6fd56ebe4207a0d0">
 		["build_uid"] = <"f7232577-9ec9-3b29-ae88-c4d125ea89b4">
 		["ip_acknowledgements"] = <"This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyrighted material of the International Health Terminology Standards Development Organisation (IHTSDO). Where an implementation of this artefact makes use of SNOMED CT content, the implementer must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/get-snomedct or info@snomed.org.">
 	>
@@ -65,7 +71,8 @@ ontology
 			items = <
 				["at0000"] = <
 					text = <"Special Patient Note">
-					description = <"Special Patient Note">
+					description = <"Special Patient Note. This is the text comment normally added by general practices in the UK to provide additional free text information about the patient's care for use by unscheduled care services and other care providers as agreed by the local health and care system.
+Specifically in the UK the GP Special Note is a concept that forms part of the Key information Summary (KIS) which is completed by GP practices for patients for whom they wish additional information to be made available via the Emergency Care Summary and Key Information Summary service.">
 				>
 				["at0001"] = <
 					text = <"ItemTree">
