@@ -22,7 +22,7 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "1904b6cfcbeb251e1acb646315ba4444",
+      "MD5-CAM-1.0.1" : "6982825fc34c51ab994061c7b2ac9110",
       "PARENT:MD5-CAM-1.0.1" : "15173A4BF38FA171E47BBE704F3E0940",
       "sem_ver" : "0.2.0"
     },
@@ -2201,7 +2201,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "7858970b7f14d3e8f112846f95f7106f"
+        "PARENT:MD5-CAM-1.0.1" : "db44405edfb6086c6fd56ebe4207a0d0"
       },
       "details" : {
         "en" : {
@@ -2297,7 +2297,20 @@
       "@type" : "ARCHETYPE_TERMINOLOGY",
       "conceptCode" : "at0000",
       "termDefinitions" : {
-        "en" : { }
+        "en" : {
+          "at0000" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000",
+            "text" : "Special Patient Note",
+            "description" : "Special Patient Note"
+          },
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000",
+            "text" : "Special Patient Note",
+            "description" : "Special Patient Note"
+          }
+        }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
