@@ -1,4 +1,4 @@
-archetype (adl_version=1.4; uid=94a8eace-42aa-454c-b0d3-1fd2b2fe8efe)
+archetype (adl_version=1.4; uid=c5066a2d-2597-4ce3-9c03-224970f938db)
 	openEHR-EHR-EVALUATION.special_patient_note.v0
 
 concept
@@ -14,24 +14,27 @@ description
 		["organisation"] = <"NHS Education Scotland Digital Service (NDS)">
 		["email"] = <"paul.miller@nes.scot.nhs.uk">
 	>
-	lifecycle_state = <"unmanaged">
+	lifecycle_state = <"in_development">
 	details = <
 		["en"] = <
 			language = <[ISO_639-1::en]>
 			purpose = <"this archetype is intended to support the Special Patient Note data in clinical record systems">
 			keywords = <"Special Note, GPs, general practice, key information summary, KIS, ACP, eKIS, ECs, Emergency Care Summary", ...>
+			copyright = <"© Apperta Foundation">
 			use = <"This archetype should be used for storing data relevant to the Special Patient Note as per the description">
 		>
 	>
 	other_details = <
 		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/.">
-		["custodian_organisation"] = <"openEHR Foundation">
-		["original_namespace"] = <"org.openehr">
-		["original_publisher"] = <"openEHR Foundation">
-		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"db44405edfb6086c6fd56ebe4207a0d0">
-		["build_uid"] = <"f7232577-9ec9-3b29-ae88-c4d125ea89b4">
+		["custodian_organisation"] = <"Apperta UK">
+		["references"] = <"Derived from: <Add reference to original resource here>">
+		["original_namespace"] = <"uk.org.clinicalmodels">
+		["original_publisher"] = <"Apperta UK">
+		["custodian_namespace"] = <"uk.org.clinicalmodels">
+		["MD5-CAM-1.0.1"] = <"F580C7A8DC318FCF012391FDF866AAEB">
+		["build_uid"] = <"73f6ca60-8112-4215-ab22-d6411b646c2a">
 		["ip_acknowledgements"] = <"This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyrighted material of the International Health Terminology Standards Development Organisation (IHTSDO). Where an implementation of this artefact makes use of SNOMED CT content, the implementer must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/get-snomedct or info@snomed.org.">
+		["revision"] = <"0.0.1-alpha">
 	>
 
 definition
