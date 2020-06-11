@@ -22,7 +22,7 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "d73599b8f4105393a6a3152b0dd9f2de",
+      "MD5-CAM-1.0.1" : "bc8f5142b774950c479f86ae7bd3574f",
       "PARENT:MD5-CAM-1.0.1" : "15173A4BF38FA171E47BBE704F3E0940",
       "sem_ver" : "0.2.0"
     },
@@ -721,8 +721,8 @@
                         "upper" : 100,
                         "lowerIncluded" : true,
                         "upperIncluded" : true,
-                        "upperUnbounded" : false,
-                        "lowerUnbounded" : false
+                        "lowerUnbounded" : false,
+                        "upperUnbounded" : false
                       } ]
                     } ]
                   } ],
@@ -1082,10 +1082,10 @@
                   "attributes" : [ {
                     "@type" : "C_ATTRIBUTE",
                     "rmAttributeName" : "value",
-                    "existence" : "0..1",
                     "children" : [ {
                       "@type" : "C_STRING",
-                      "constraint" : [ "Parent", "Family", "Friend", "Next of kin", "Power of Attorney", "Welfare Guardian", "Main personal carer", "Neighbour", "Key worker", "General Practitioner", "Lead Consultant", "Emergency contact", "Other", "/.+/" ]
+                      "rmTypeName" : "STRING",
+                      "constraint" : [ "Parent", "Family", "Friend", "Next of kin", "Power of Attorney", "Welfare Guardian", "Main personal carer", "Neighbour", "Key worker", "General Practitioner", "Lead Consultant", "Emergency contact", "Other" ]
                     } ]
                   } ],
                   "attributeTuples" : [ ]
@@ -1664,8 +1664,8 @@
                     "lower" : 0,
                     "lowerIncluded" : true,
                     "upperIncluded" : false,
-                    "upperUnbounded" : true,
-                    "lowerUnbounded" : false
+                    "lowerUnbounded" : false,
+                    "upperUnbounded" : true
                   } ]
                 } ]
               } ],
@@ -2133,8 +2133,8 @@
                     "lower" : 0,
                     "lowerIncluded" : true,
                     "upperIncluded" : false,
-                    "upperUnbounded" : true,
-                    "lowerUnbounded" : false
+                    "lowerUnbounded" : false,
+                    "upperUnbounded" : true
                   } ]
                 } ]
               } ],
@@ -2298,12 +2298,6 @@
       "conceptCode" : "at0000",
       "termDefinitions" : {
         "en" : {
-          "at0000" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0000",
-            "text" : "Special Patient Note",
-            "description" : "Special Patient Note"
-          },
           "at0000.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0000",
